@@ -42,7 +42,7 @@ body {
   display: grid;
   grid-auto-flow: column;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .header > div:first-child {
@@ -66,7 +66,6 @@ body {
   font-weight: bold;
   padding: 0.8rem;
   font-size: 0.9rem;
-  /* background-color: pink; */
   text-align: center;
   cursor: pointer;
 }
@@ -78,8 +77,9 @@ body {
 
 /* MIDDLE */
 .middle {
-  width: 45rem;
   place-self: center;
+  min-width: min-content;
+  max-width: 45rem;
 
   display: grid;
   justify-items: center;
@@ -92,6 +92,7 @@ body {
   font-family: "Poppins-Bold";
   font-size: 3rem;
   padding: 1.4rem 0;
+  text-align: center;
 }
 .middle > div:nth-child(3) {
   font-size: 1.1rem;
