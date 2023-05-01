@@ -16,6 +16,9 @@
   --secondary-color: #fff;
   --accent-color: #aaa;
 }
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Poppins-Regular";
@@ -29,7 +32,7 @@ body {
   height: 100vh;
 
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: 5.875rem 1fr;
 }
 
 /* HEADER */
