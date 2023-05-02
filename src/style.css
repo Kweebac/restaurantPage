@@ -75,7 +75,7 @@ body {
   border-bottom: 4px solid var(--accent-color);
 }
 
-/* MIDDLE */
+/* MIDDLE CONTENT FOR HOME */
 .middle {
   place-self: center;
   min-width: min-content;
@@ -118,4 +118,46 @@ body {
 .middle button:last-child {
   background-color: transparent;
   border: 2px solid var(--secondary-color);
+}
+
+/* MIDDLE CONTENT FOR MENU */
+.cards {
+  padding: 5rem 10rem;
+
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-auto-rows: 18rem;
+}
+.card {
+  padding: 0.4rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+
+  display: grid;
+}
+.card > img {
+  padding-bottom: 0.8rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 100%;
+  width: 100%;
+}
+.card > div:first-of-type {
+  text-align: center;
+  font-family: "Poppins-Bold";
+}
+.card > div:nth-of-type(2) {
+  text-align: center;
+  font-size: 0.7rem;
+  color: var(--accent-color);
+  padding-bottom: 0.5rem;
+}
+.card > button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 6px;
+  width: 4rem;
+  margin: 0 auto;
 }
