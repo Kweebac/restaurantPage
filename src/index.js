@@ -1,15 +1,22 @@
-import { createHome } from "./home";
-import { createMenu } from "./menu";
-import { createContact } from "./contact";
-import { removePage } from "./remove-page";
+import { page } from "./page-load";
 
-const page = {
-  create: {
-    home: createHome,
-    menu: createMenu,
-    contact: createContact,
-  },
-  remove: removePage,
-};
+page.create.home();
 
-page.create.contact();
+const homeButton = document.querySelector(".list > div:first-child");
+const menuButton = document.querySelector(".list > div:nth-child(2)");
+const contactButton = document.querySelector(".list > div:last-child");
+
+homeButton.addEventListener("click", () => {
+  page.remove();
+  page.create.home();
+});
+
+menuButton.addEventListener("click", () => {
+  page.remove();
+  page.create.menu();
+});
+
+contactButton.addEventListener("click", () => {
+  page.remove();
+  page.create.contact();
+});

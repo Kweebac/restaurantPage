@@ -231,6 +231,7 @@ form textarea {
   resize: none;
 }
 form button {
+  cursor: pointer;
   width: 7rem;
   height: 3rem;
   border: none;
