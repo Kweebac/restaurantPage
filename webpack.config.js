@@ -7,7 +7,7 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
     clean: {
-      keep: "index.html",
+      keep: /index.html|style.css|normalize.css/,
     },
   },
   devtool: "inline-source-map",

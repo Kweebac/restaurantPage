@@ -17,7 +17,7 @@ function middleHomeButtons() {
   });
 }
 
-// only used once
+// loads the initial page
 page.build();
 middleHomeButtons();
 
