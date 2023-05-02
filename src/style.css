@@ -74,6 +74,12 @@ body {
   background-color: var(--secondary-color);
   border-bottom: 4px solid var(--accent-color);
 }
+.header > .list > div.active,
+.header > .list > div:active {
+  color: var(--primary-color);
+  border-bottom: 4px solid var(--primary-color);
+  background-color: rgba(111, 111, 111, 0.1);
+}
 
 /* MIDDLE CONTENT FOR HOME */
 .middle {

@@ -1,6 +1,16 @@
 const contentDiv = document.querySelector("#content");
 
 function createHome() {
+  // remove all other active classes
+  document.querySelectorAll(".header > .list > div").forEach((button) => {
+    button.classList.remove("active");
+  });
+
+  // add active class
+  document
+    .querySelector(".header > .list > div:first-child")
+    .classList.add("active");
+
   let newDiv = document.createElement("div");
   newDiv.classList.add("middle");
   newDiv.innerHTML = ` 

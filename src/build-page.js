@@ -8,7 +8,7 @@ function buildPage() {
       <span>Cooking</span>
     </div>
     <div class="list">
-      <div>HOME</div>
+      <div class="active">HOME</div>
       <div>OUR MENU</div>
       <div>CONTACT</div>
     </div>

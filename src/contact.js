@@ -1,6 +1,17 @@
 const contentDiv = document.querySelector("#content");
 
 function createContact() {
+  // remove all other active classes
+  document.querySelectorAll(".header > .list > div").forEach((button) => {
+    button.classList.remove("active");
+  });
+
+  // add active class
+  document
+    .querySelector(".header > .list > div:last-child")
+    .classList.add("active");
+
+  // add html
   let newDiv = document.createElement("div");
   newDiv.classList.add("form");
   newDiv.innerHTML = `

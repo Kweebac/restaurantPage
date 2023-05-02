@@ -1,6 +1,16 @@
 const contentDiv = document.querySelector("#content");
 
 function createMenu() {
+  // remove all other active classes
+  document.querySelectorAll(".header > .list > div").forEach((button) => {
+    button.classList.remove("active");
+  });
+
+  // add active class
+  document
+    .querySelector(".header > .list > div:nth-child(2)")
+    .classList.add("active");
+
   let newDiv = document.createElement("div");
   newDiv.classList.add("cards");
   newDiv.innerHTML = `
