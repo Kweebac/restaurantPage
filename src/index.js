@@ -17,10 +17,11 @@ function middleHomeButtons() {
   });
 }
 
-// Only used once
+// only used once
 page.build();
 middleHomeButtons();
 
+// event listeners for header buttons
 const homeButton = document.querySelector(".list > div:first-child");
 const menuButton = document.querySelector(".list > div:nth-child(2)");
 const contactButton = document.querySelector(".list > div:last-child");

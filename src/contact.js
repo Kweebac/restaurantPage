@@ -33,11 +33,11 @@ function createContact() {
       <form action="" method="post">
         <div>
           <label for="name">Name:</label>
-          <input type="text" name="name" id="name" />
+          <input type="text" name="name" id="name" required />
         </div>
         <div>
           <label for="email">Email:</label>
-          <input type="email" name="email" id="email" />
+          <input type="email" name="email" id="email" required />
         </div>
         <div>
           <label for="message">Message:</label>
@@ -46,6 +46,7 @@ function createContact() {
             id="message"
             cols="50"
             rows="10"
+            required
           ></textarea>
         </div>
         <button>Submit</button>
