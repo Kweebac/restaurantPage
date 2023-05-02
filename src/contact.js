@@ -1,19 +1,9 @@
 const contentDiv = document.querySelector("#content");
 
 function createContact() {
-  contentDiv.innerHTML = `
-  <div class="header">
-    <div>
-      <span>Breanna's</span>
-      <span>Cooking</span>
-    </div>
-    <div class="list">
-      <div>HOME</div>
-      <div>OUR MENU</div>
-      <div>CONTACT</div>
-    </div>
-  </div>
-  <div class="form">
+  let newDiv = document.createElement("div");
+  newDiv.classList.add("form");
+  newDiv.innerHTML = `
     <div class="title">
       <div>
         <span>Breanna's</span>
@@ -53,8 +43,9 @@ function createContact() {
         src="https://nyf005.github.io/restaurant-project/3b392d7cb004d88af9dd.png"
         alt=""
       />
-    </div>
-  </div>`;
+    </div>`;
+
+  contentDiv.appendChild(newDiv);
 }
 
 export { createContact };

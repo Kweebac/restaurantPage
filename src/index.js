@@ -1,6 +1,6 @@
 import { page } from "./page-load";
 
-page.create.home();
+page.build();
 
 const homeButton = document.querySelector(".list > div:first-child");
 const menuButton = document.querySelector(".list > div:nth-child(2)");
